@@ -18,3 +18,11 @@ function init (){
   firebase.initializeApp(firebaseConfig);
   firebase.firestore();
   window.addEventListener('load', init);
+  //firebase.analytics();
+
+  //window.addEventListener('load', firebaseConfig);
+
+
+
+ 
+  

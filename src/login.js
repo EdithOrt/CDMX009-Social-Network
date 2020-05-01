@@ -1,6 +1,8 @@
 import showOupladWindow from './uopladContent.js'
+import showComments from './comentarios.js'
 import welcomeView from './welcome.js'
 import profile from './profile.js'
+
 let content= document.querySelector(".root");
 let staticMenu= document.querySelector("#staticMenu");
 
@@ -21,7 +23,8 @@ function singIn (){
         // staticMenu.remove();
         document.querySelector("#oupladContent").addEventListener('click', showOupladWindow);
         document.querySelector("#profile").addEventListener('click', welcomeView);
-        document.querySelector("#provisional").addEventListener('click', profile) ;
+        document.querySelector("#provisional").addEventListener('click', profile);
+        document.querySelector("#favorites").addEventListener('click', showComments);
         let btnFacebook= document.querySelector("#loginFacebook");
         btnFacebook.onclick= authFacebook;
         function authFacebook () {
@@ -60,4 +63,4 @@ function singIn (){
         console.log(user);}
     }
 
-export default singIn;
+    export default singIn;
